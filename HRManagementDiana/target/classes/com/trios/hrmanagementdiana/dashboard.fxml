@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="261.0" prefWidth="246.0" spacing="20" style="-fx-background-color: #F4F4F4; -fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.trios.hrmanagementdiana.DashboardController">
+    <Label fx:id="welcomeLabel" style="-fx-font-size: 18px;" text="Welcome, Admin" textFill="#1b18c3">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font></Label>
+    <Label fx:id="dateLabel" style="-fx-font-size: 14px;" text="Date: YYYY-MM-DD" />
+
+    <Button fx:id="adminButton" onAction="#adminAction" style="-fx-font-size: 14px;" text="Admin" />
+    <Button fx:id="employeeButton" onAction="#employeeAction" style="-fx-font-size: 14px;" text="Employee" />
+    <Button fx:id="logoutButton" onAction="#logoutAction" style="-fx-font-size: 14px;" text="Logout" />
+    <Button fx:id="exitButton" onAction="#exitAction" style="-fx-font-size: 14px;" text="Exit" />
+</VBox>

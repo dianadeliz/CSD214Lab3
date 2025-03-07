@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="268.0" prefWidth="285.0" spacing="20" style="-fx-background-color: #F4F4F4; -fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.trios.hrmanagementdiana.LoginController">
+    <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="HR MANAGEMENT APP" textFill="#3d2ab9">
+        <font>
+            <Font size="8.0" />
+        </font>
+    </Label>
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Admin Login Page" textFill="#33a4c9" />
+    <TextField fx:id="emailField" promptText="Email" style="-fx-font-size: 14px; -fx-pref-width: 200;" />
+    <PasswordField fx:id="passwordField" promptText="Password" style="-fx-font-size: 14px; -fx-pref-width: 200;" />
+    <Button fx:id="loginButton" onAction="#handleLogin" style="-fx-font-size: 14px;" text="Login" />
+</VBox>

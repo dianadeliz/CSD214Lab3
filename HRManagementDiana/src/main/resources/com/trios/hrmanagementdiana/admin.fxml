@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.trios.hrmanagementdiana.AdminController"
+      alignment="CENTER" spacing="10" style="-fx-background-color: #F4F4F4; -fx-padding: 20;">
+
+    <!-- TableView for Admin Data -->
+    <TableView fx:id="adminTable" style="-fx-pref-width: 500;">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="nameColumn" text="Admin Name" prefWidth="200"/>
+            <TableColumn fx:id="emailColumn" text="Admin Email" prefWidth="250"/>
+        </columns>
+    </TableView>
+
+    <!-- Buttons for CRUD operations -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="viewButton" text="View Admins" onAction="#handleViewAdmins"/>
+        <Button fx:id="createButton" text="Create Admin" onAction="#handleCreateAdmin"/>
+        <Button fx:id="updateButton" text="Update Admin" onAction="#handleUpdateAdmin"/>
+        <Button fx:id="deleteButton" text="Delete Admin" onAction="#handleDeleteAdmin"/>
+    </HBox>
+
+    <Button fx:id="backButton" text="Back" onAction="#backAction"/>
+</VBox>
